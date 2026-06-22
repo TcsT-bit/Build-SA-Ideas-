@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build SA Ideas | Turn Ideas into Investor-Ready MVPs</title>
+<meta name="description" content="We turn SA business ideas into investor-ready MVPs in 14 days. Free to apply.">
+<style>
+  :root {
+    --bg: #0a0a0b;
+    --card: #151517;
+    --text: #f5f5f7;
+    --muted: #a1a1aa;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --border: #262629;
+  }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  header {
+    text-align: center;
+    padding: 60px 0;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .subhead {
+    font-size: 1.2rem;
+    color: var(--muted);
+    margin-bottom: 32px;
+  }
+  .cta {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .cta:hover { background: var(--accent-hover); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin: 60px 0;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .card h3 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+  }
+  .card p { color: var(--muted); }
+  .process {
+    margin: 60px 0;
+  }
+  .process ol {
+    list-style: none;
+    counter-reset: step;
+  }
+  .process li {
+    counter-increment: step;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+  }
+  .process li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--accent);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 60px;
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Turn SA Ideas into Investor-Ready MVPs</h1>
+      <p class="subhead">
+        Got a business idea but no dev skills or cash? We build you a clickable MVP and validation data in 14 days. Free to apply.
+      </p>
+      <a href="https://tally.so#replace-with-your-link" class="cta">Apply for Free</a>
+      <p style="margin-top: 12px; color: var(--muted); font-size: 0.9rem;">
+        Only 5 ideas accepted per month
+      </p>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Built for SA</h3>
+        <p>Most accelerators want pitch decks. We want real problems from real SA founders. Rich, educated, or not.</p>
+      </div>
+      <div class="card">
+        <h3>We Build It</h3>
+        <p>You bring the idea. We build the landing page, clickable prototype, and run 10 user interviews.</p>
+      </div>
+      <div class="card">
+        <h3>We Connect You</h3>
+        <p>Once validated, we package it and intro you to corporates and angels who actually write cheques.</p>
+      </div>
+    </section>
+
+    <section class="process">
+      <h2 style="margin-bottom: 24px;">How It Works</h2>
+      <ol>
+        <li><strong>Submit your idea</strong> in 3 minutes. Voice note or PDF works.</li>
+        <li><strong>We vet it</strong> in 7 days. If it fits, you’re in.</li>
+        <li><strong>We build</strong> a 1-page site + prototype + validation data in 14 days.</li>
+        <li><strong>We pitch it</strong> to our network of SA corporates and angels.</li>
+      </ol>
+    </section>
+
+    <section class="card" style="text-align: center;">
+      <h3>Ready to test your idea?</h3>
+      <p style="margin-bottom: 20px;">Applications close on the 15th of every month. Next batch starts 1st Oct 2026.</p>
+      <a href="https://tally.so#replace-with-your-link" class="cta">Apply Now</a>
+    </section>
+
+    <footer>
+      <p>Based in Clermont, KZN | Built for SA founders</p>
+      <p style="margin-top: 8px; font-size: 0.85rem;">
+        Questions? Email hello@yourdomain.com
+      </p>
+    </footer>
+  </div>
+</body>
+  </html>
