@@ -22,7 +22,7 @@
     color: var(--text);
     line-height: 1.6;
   }
-  .container {
+ .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -36,12 +36,12 @@
     font-weight: 700;
     margin-bottom: 16px;
   }
-  .subhead {
+ .subhead {
     font-size: 1.2rem;
     color: var(--muted);
     margin-bottom: 32px;
   }
-  .cta {
+ .cta {
     display: inline-block;
     background: var(--accent);
     color: white;
@@ -50,39 +50,41 @@
     text-decoration: none;
     font-weight: 600;
     transition: background 0.2s;
+    cursor: pointer;
+    border: none;
   }
-  .cta:hover { background: var(--accent-hover); }
-  .grid {
+ .cta:hover { background: var(--accent-hover); }
+ .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 24px;
     margin: 60px 0;
   }
-  .card {
+ .card {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 24px;
   }
-  .card h3 {
+ .card h3 {
     margin-bottom: 12px;
     font-size: 1.1rem;
   }
-  .card p { color: var(--muted); }
-  .process {
+ .card p { color: var(--muted); }
+ .process {
     margin: 60px 0;
   }
-  .process ol {
+ .process ol {
     list-style: none;
     counter-reset: step;
   }
-  .process li {
+ .process li {
     counter-increment: step;
     margin-bottom: 20px;
     padding-left: 40px;
     position: relative;
   }
-  .process li::before {
+ .process li::before {
     content: counter(step);
     position: absolute;
     left: 0;
@@ -97,6 +99,13 @@
     justify-content: center;
     font-weight: 600;
     font-size: 0.9rem;
+  }
+ .form-section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 60px 0;
   }
   footer {
     text-align: center;
@@ -117,7 +126,7 @@
       <p class="subhead">
         Got a business idea but no dev skills or cash? We build you a clickable MVP and validation data in 14 days. Free to apply.
       </p>
-      <a href="https://tally.so#replace-with-your-link" class="cta">Apply for Free</a>
+      <a href="#apply" class="cta">Apply for Free</a>
       <p style="margin-top: 12px; color: var(--muted); font-size: 0.9rem;">
         Only 5 ideas accepted per month
       </p>
@@ -148,10 +157,24 @@
       </ol>
     </section>
 
-    <section class="card" style="text-align: center;">
-      <h3>Ready to test your idea?</h3>
-      <p style="margin-bottom: 20px;">Applications close on the 15th of every month. Next batch starts 1st Oct 2026.</p>
-      <a href="https://tally.so#replace-with-your-link" class="cta">Apply Now</a>
+    <section id="apply" class="form-section">
+      <h2 style="text-align: center; margin-bottom: 12px;">Apply to Build Your MVP</h2>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 24px;">
+        Takes 3 minutes. No pitch deck needed.
+      </p>
+
+      <!-- Tally Embed - Replace src with your actual form link -->
+      <iframe
+        data-tally-src="https://tally.so/embed/w4x6A9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="600"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="MVP Application Form">
+      </iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
     </section>
 
     <footer>
@@ -162,4 +185,4 @@
     </footer>
   </div>
 </body>
-  </html>
+</html>
